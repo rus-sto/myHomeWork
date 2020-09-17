@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>firsttest</artifactId>
+    <artifactId>animals</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <sonar.projectKey>rus-sto_Jis4RUS</sonar.projectKey>
         <sonar.organization>rus-sto</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>9360e7a77fa2949bb5bd0cc4f69c2dc6c93fac3c</sonar.login>
+        <sonar.login>16755d7ca1c7cf3225e15ed031c80766826d2e9d</sonar.login>
     </properties>
 
     <dependencies>
@@ -43,6 +43,17 @@
             <artifactId>system-rules</artifactId>
             <version>1.16.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0-M1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>backport-util-concurrent</groupId>
+            <artifactId>backport-util-concurrent</artifactId>
+            <version>3.1</version>
         </dependency>
 
     </dependencies>
