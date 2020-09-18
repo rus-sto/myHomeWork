@@ -3,22 +3,23 @@ package by.jrr.ruslan.bean;
 import java.util.Objects;
 
 public class Dog extends Mammal{
-public  String breat;
+private  String breed;
+
 public String wagTheTail(){
     return "I always wagging the tail";
 }
 
-    public Dog(int countOfLegs, boolean canSwim, String color, boolean mustaches, String breat) {
+    public Dog(int countOfLegs, boolean canSwim, String color, boolean mustaches, String breed) {
         super(countOfLegs, canSwim, color, mustaches);
-        this.breat = breat;
+//        this.breed = breed;
     }
 
-    public String getBreat() {
-        return breat;
+    public String getBreed() {
+    return breed;
     }
 
-    public void setBreat(String breat) {
-        this.breat = breat;
+    public void setBreed(String breed) {
+    this.breed = breed;
     }
 
     @Override
@@ -26,27 +27,19 @@ public String wagTheTail(){
         if (this == o) return true;
         if (!(o instanceof Dog)) return false;
         Dog dog = (Dog) o;
-        return Objects.equals(breat, dog.breat);
+        return Objects.equals(breed, dog.breed);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(breat);
+        return Objects.hash(breed);
     }
 
     @Override
     public String toString() {
         return "Dog{" +
-                "breat='" + breat + '\'' +
-                ", mustaches=" + mustaches +
+                "breed='" + breed + '\'' +
                 ", countOfLegs=" + countOfLegs +
-                ", canSwim=" + canSwim +
-                ", color='" + color + '\'' +
                 '}';
-    }
-
-    @Override
-    public String voice() {
-        return "RRHau-rrhau";
     }
 }

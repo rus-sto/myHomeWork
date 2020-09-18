@@ -7,8 +7,9 @@ public class DemoAnimalTest {
     @Test
     public void parrotTest() {
         Parrot parrot = new Parrot(2, true, "wavy", "pink", "Kesha");
-        String expected = "Parrot{name='Kesha', beakColor='pink', countOfLegs=2, canSwim=true, color='wavy'}";
+        String expected = "Parrot{name='Kesha', countOfLegs=2}";
         Assert.assertEquals(expected, parrot.toString());
+//        System.out.println("parrot.toString() = " + parrot.toString());
     }
 
     @Test
@@ -24,8 +25,9 @@ public class DemoAnimalTest {
     @Test
     public void catTest() {
         Cat cat = new Cat(4, false, "red", true, "Murzik");
-        String expected = "Cat{name='Murzik', mustaches=true, countOfLegs=4, canSwim=false, color='red'}";
+        String expected = "Cat{name='Murzik', countOfLegs=4}";
         Assert.assertEquals(expected, cat.toString());
+//        System.out.println("cat.toString() = " + cat.toString());
     }
 
     @Test
@@ -39,8 +41,10 @@ public class DemoAnimalTest {
 @ Test
     public void dogTest(){
         Dog dog = new Dog(4, true, "ultra red", true, "ridgback");
-    String expected = "Dog{breat='ridgback', mustaches=true, countOfLegs=4, canSwim=true, color='ultra red'}";
+        dog.setBreed("ridgback");
+    String expected = "Dog{breed='ridgback', countOfLegs=4}";
         Assert.assertEquals(expected,dog.toString());
+//    System.out.println("dog.toString() = " + dog.toString());
 }
 @Test
     public void allMethodsDogTest(){
@@ -48,7 +52,7 @@ public class DemoAnimalTest {
 Assert.assertEquals("I always wagging the tail",dog.wagTheTail());
     Assert.assertEquals("I can breath",dog.breath());
     Assert.assertEquals("running fast",dog.run());
-    Assert.assertEquals("RRHau-rrhau",dog.voice());
+    Assert.assertEquals("I say Hau-hau",dog.voice());
 
 }
 }

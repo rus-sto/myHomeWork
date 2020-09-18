@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Cat extends Mammal {
 
-    public String name;
+    private String name;
 
     public Cat(int countOfLegs, boolean canSwim, String color, boolean mustaches, String name) {
         super(countOfLegs, canSwim, color, mustaches);
@@ -12,11 +12,11 @@ public class Cat extends Mammal {
     }
 
     public String getName() {
-        return name;
+                return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+                this.name = name;
     }
 
     @Override
@@ -36,10 +36,7 @@ public class Cat extends Mammal {
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
-                ", mustaches=" + mustaches +
                 ", countOfLegs=" + countOfLegs +
-                ", canSwim=" + canSwim +
-                ", color='" + color + '\'' +
                 '}';
     }
 

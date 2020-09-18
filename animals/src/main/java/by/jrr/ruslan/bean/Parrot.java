@@ -40,10 +40,7 @@ public class Parrot extends Birds{
     public String toString() {
         return "Parrot{" +
                 "name='" + name + '\'' +
-                ", beakColor='" + beakColor + '\'' +
                 ", countOfLegs=" + countOfLegs +
-                ", canSwim=" + canSwim +
-                ", color='" + color + '\'' +
                 '}';
     }
 }
