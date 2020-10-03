@@ -1,6 +1,4 @@
 package by.jrr.ruslan.uniqwordcount;
-
-
 import java.util.Arrays;
 
 import org.slf4j.Logger;
